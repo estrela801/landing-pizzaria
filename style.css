@@ -1,0 +1,282 @@
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+.header{
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1f1e1f;
+    width: 100vw;
+    height: 70px;
+}
+.logo{
+    padding-left:30rem;
+    width: 70px;
+    height: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.logo h3{
+    color: white;
+    font-size: 1.6rem;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.header .ul{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .ul a{
+    padding: 3rem 1rem 2rem 1rem ;
+    color: white;
+    font-size: 1.8rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 200ms ease-in;
+}
+.header .ul a:hover{
+    background-color: #3333;
+    border-bottom: 4px solid #ffc506;
+    color: #ffc506;
+}
+
+/* MAIN */
+
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(29,29,29,.8), rgba(29,29,29,.8)),url(https://github.com/CrislaineLuana/ProjetoSitePizzaria/blob/main/img/fundopizza.jpg?raw=true);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+}
+.mainly-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.mainly-content h1{
+    color: #ffc506;
+    font-size:6rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.mainly-content h2{
+    font-size: 3rem;
+    color: rgb(177,177,177);
+    font-weight:300 ;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+.btns{
+    display: flex;
+    justify-content: space-between;
+    width:  480px;
+
+}
+.btns button {
+    width:230px ;
+    height: 60px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #ffc506;
+    border-radius: 10px;
+    color: black;
+    font-weight: 700;
+    margin-top: 5rem;
+    transition: all 200ms ease-in;
+}
+.btns button:hover{
+    border: 1px solid #ffc506;
+    background-color: transparent;
+    color: #ffc506;
+}
+/* ---------------------------------- */
+
+/* SOBRE */
+.sobre{
+    background-color: #1f1e1f;
+    width: 100%;
+    color: white;
+    padding-bottom: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sobre img{
+    width: 400px;
+    height:  400px;
+    margin-top: 10rem;
+    margin-left: 10rem;
+    border: 2px solid rgb(155, 155, 155);
+}
+.div-main{
+    display: flex;
+    justify-content: space-between;
+}
+.content-sobre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content-sobre h2{
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.content-sobre p {
+    text-align: center;
+    font-size: 1.8rem;
+    max-width: 600px;
+}
+
+/* ------------------------------------------------- */
+
+/* CARDAPIO */
+.cardapio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    background-color: rgba(12,12,12,.8);
+}
+.cardapio h2{
+    font-size: 5rem;
+    color: #e6e6e6;
+    text-transform: uppercase;
+}
+.itens{
+    width: 80%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,550px));
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.itens .info{ 
+    background-color: rgb(221, 221, 221);
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+.itens img{
+    width: 100%;
+    height: 200px;
+}
+.info h3{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+}
+.info h4{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: .6rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 150px 150px;
+    margin-left: 6rem;
+}
+.info h4 span{
+    font-size: 1.6rem;
+    color: #585858;
+    margin-left: 1.5rem;
+    text-decoration: underline;
+}
+.itens div{
+    background-color: #5e5252;
+    box-shadow: 0 0 4px 1px;
+}
+.itens .info .pedir{
+    width: 200px;
+    height: 35px;
+    margin-top: .5rem;
+    background-color: #ffc506;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: black;
+    transition: all 200ms ease-in;
+}
+.itens .info .pedir:hover{
+    background-color: #5e5252;
+    color: white;
+}
+/* ---------------------------------------------- */
+
+/* cCONTATOS */
+.contatos{
+    width: 100%;
+    background-color: #1f1e1f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: white;
+    padding-bottom: 4rem;
+}
+.contatos h3{
+    font-size: 6rem;
+    margin-bottom: 3rem;
+}
+.contatos-secao{
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+
+}
+.contatos-secao i {
+    margin-right: 1rem;
+}
+.contatos-secao div{
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+.contatos-secao di:hover{
+    color: #ffc506;
+
+}
+/* -------------------------------------- */
+/*  FOOTER */
+footer{
+    height: 25px;
+    background-color: black;
+    color: white;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ---------------- */

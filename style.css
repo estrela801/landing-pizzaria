@@ -3,6 +3,8 @@ html{
     overflow-x: hidden;
     width: 100vw;
     height: 100vh;
+    scroll-behavior: smooth;
+    scroll-padding-top:80px ;
 }
 .header{
     position: fixed;
@@ -12,6 +14,7 @@ html{
     background-color: #1f1e1f;
     width: 100vw;
     height: 70px;
+    transition: all 200ms ;
 }
 .logo{
     padding-left:30rem;
@@ -168,11 +171,11 @@ html{
     text-transform: uppercase;
 }
 .itens{
-    width: 80%;
+    width: 90%;
     margin-top: 2rem;
     margin-bottom: 2rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,550px));
+    grid-template-columns: repeat(auto-fit, minmax(150px,350px));
     justify-content: center;
     align-items: center;
     gap: 30px;
@@ -280,3 +283,213 @@ footer{
 }
 
 /* ---------------- */
+
+
+@media screen and (max-width: 1200px){
+    .div-main{
+        display: block;
+    }
+    .header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0px;
+    }
+    .logo{
+        padding-left: 0;
+    }
+    .sobre img{
+        width: 600px;
+        margin-left: -2px;
+    }
+}
+@media (max-width:992px){
+    html{
+        font-size: 50%;
+    }
+}
+@media (max-width:768px){
+    html{
+        font-size: 40%;
+    }
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 40px;
+    }
+
+    .header .ul{
+        display: none;
+    }
+    .one,.two,.three{
+        width: 80%;
+        height: 2px;
+        background-color: white;
+        transition-duration: .5s;
+        margin: 5px auto;
+    } 
+    .menu-toogle{
+        margin-right: 100px;
+        width: 30px;
+        height: 30px;
+        /* background-color: #fff; */
+    }
+    
+    .header.on{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(30, 31, 30, .8);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .header.on .logo{
+    display: none;
+   }
+   .header.on .menu-toogle{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+   }
+   .header.on .ul{
+    display: block;
+   }
+   .header.on .ul li {
+    display: flex;
+    justify-content: center;
+   }
+   .header.on .ul li a {
+    font-size: 2rem;
+    display: block;
+   }
+   .header.on .menu-toogle .two{
+    opacity: 0;
+   }
+   .header.on .menu-toogle .one{
+    transform: rotate(45deg) translate(5px, -8px);
+   }
+   .header.on .menu-toogle .three{
+    transform: rotate(-45deg) translate(18px, -5px);
+   }
+   .header.on .main{
+    height: 130vh;
+   }
+   .itens{
+        grid-template-columns: repeat(2,minmax(50px, 350px));
+    }
+    .itens .info h4{
+        margin-left: 12rem;
+    }
+   .contatos-secao{
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+   }
+   .contatos-secao div{
+    margin: 1rem;
+    font-size: 3rem;
+   }
+}
+@media (max-width: 600px){ 
+    body{
+        width: 100% ;
+        overflow-x: hidden;
+    }
+    .sobre img{
+        width: 400px;
+        height: 250px;
+        margin-left: 10px;
+    }
+    .content-sobre p{
+        width: 400px;
+        text-align: center;
+    }
+    .mainly-content h1{
+        width: 500px;
+        text-align: center;
+        font-size: 3rem;
+    }
+    .mainly-content h2{
+        font-size: 2rem;
+    }
+    .itens{
+        grid-template-columns: repeat(auto-fit, minmax(50px, 350px));
+    }
+    .contatos-secao{
+        width: 300px;
+    }
+    footer{
+        font-size: 2rem;
+    }
+}
+@media (max-width:500px){
+
+.btns{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+    }
+    .btns button{
+        font-size: 1.5rem;
+        width:100%;
+
+    }
+    .mainly-content h1{
+        width: 350px;
+        font-size: 3rem;
+        text-align: center;
+    }
+    .mainly-content h2{
+        width: 200px;
+        font-size: 2rem;
+    }
+
+}
+@media (max-width:395px){
+    .sobre img{
+        width: 250px;
+        height: auto;
+        margin-left: 10px;
+    }
+    .content-sobre p{
+        text-align: center;
+        width: 250px;
+    }
+    .itens{
+        width: 50%;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(50px, 350px));
+    }
+    
+    .itens div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* width: 200px; */
+    }
+    .itens img{
+        width: 80%;
+        height: auto;
+
+    }
+    .itens .info{
+        width: 90%;
+        height: 150px;
+    }
+    .itens .info h4{
+        grid-template-columns: 93px 150px;
+    }
+    .itens .info .pedir{
+        width: 100%;
+        font-size: 1.5rem;
+    }
+}
+    

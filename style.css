@@ -92,7 +92,6 @@ html{
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: 50px;
 }
 .mainly-content{
     display: flex;
@@ -318,6 +317,8 @@ footer{
         justify-content: center;
         align-items: center;
         padding-left: 0px;
+        /* font-size: 500px; */
+        height: 150px;
     }
     .logo{
         padding-left: 0;
@@ -325,6 +326,11 @@ footer{
     .sobre img{
         width: 600px;
         margin-left: -2px;
+    }
+    .contatos-secao{
+        /* flex-wrap: wrap; */
+        font-size: 3rem;
+        width: 80%;
     }
 }
 @media (max-width:992px){
@@ -337,6 +343,7 @@ footer{
         font-size: 40%;
     }
     .header{
+        height: auto;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -383,6 +390,7 @@ footer{
    }
    .header.on .ul{
     display: block;
+    margin-right: 80px;
    }
    .header.on .ul li {
     display: flex;
@@ -409,14 +417,20 @@ footer{
     }
     .itens .info h4{
         margin-left: 12rem;
+        width: 50px;
     }
    .contatos-secao{
+
     display: block;
     text-align: center;
     font-size: 2rem;
+    width: 80%;
+    
+
    }
    .contatos-secao div{
-    margin: 1rem;
+
+    margin: 1.5rem;
     font-size: 3rem;
    }
 }
@@ -445,16 +459,19 @@ footer{
     .itens{
         grid-template-columns: repeat(auto-fit, minmax(50px, 350px));
     }
-    .contatos-secao{
-        width: 300px;
-    }
+    /* .contatos-secao{
+         width: 300px; 
+    } */
     footer{
         font-size: 2rem;
     }
 }
 @media (max-width:500px){
+    .header{
+        height: auto;
+    }
 
-.btns{
+    .btns{
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -473,6 +490,12 @@ footer{
     .mainly-content h2{
         width: 200px;
         font-size: 2rem;
+    }
+    .contatos-secao{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     }
 
 }
@@ -514,6 +537,9 @@ footer{
     .itens .info .pedir{
         width: 100%;
         font-size: 1.5rem;
+    }
+    .contatos-secao div{
+        font-size: 8rem;
     }
 }
     

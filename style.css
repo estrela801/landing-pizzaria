@@ -6,6 +6,16 @@ html{
     scroll-behavior: smooth;
     scroll-padding-top:80px ;
 }
+::-webkit-scrollbar{
+    background-color: #1f1e1f;
+    width: 20px;
+    height: 12px;
+    border: 2px solid rgba(40, 20, 20, 0.6);
+}
+::-webkit-scrollbar-thumb{
+    background-color: #fff;
+    border-radius: 7px;
+}
 .header{
     position: fixed;
     display: flex;
